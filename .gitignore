@@ -29,3 +29,5 @@ data/db/
 # Backups
 backup/
 *.dump
+
+.claude/
