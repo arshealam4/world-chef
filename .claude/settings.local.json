@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs kill:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5Y2FhNDNlZTA5YjhkYjBjNmE4YjI4MyIsInVzZXJuYW1lIjoidGVzdHVzZXIiLCJpYXQiOjE3NzQ4ODc5OTgsImV4cCI6MTc3NzQ3OTk5OH0.gr1-i_DUOOGWHghdjhzA2xVz2yjlWM8JUzXGS0iadTA\" __NEW_LINE_e148bf70b3aaf443__ echo \"=== Game State ===\" curl -s http://localhost:5001/api/game/state -H \"Authorization: Bearer $TOKEN\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 -c \"import sys,json; print\\(len\\(json.load\\(sys.stdin\\)\\)\\)\" __NEW_LINE_e148bf70b3aaf443__ echo -e \"\\\\n=== Config: Dishes count ===\" curl -s http://localhost:5001/api/game/config/dishes)",
+      "Bash(python3 -c \"import sys,json; print\\(len\\(json.load\\(sys.stdin\\)\\)\\)\" __NEW_LINE_e148bf70b3aaf443__ echo -e \"\\\\n=== Config: Ingredients count ===\" curl -s http://localhost:5001/api/game/config/ingredients)",
+      "Bash(python3 -c \"import sys,json; print\\(len\\(json.load\\(sys.stdin\\)\\)\\)\" __NEW_LINE_e148bf70b3aaf443__ echo -e \"\\\\n=== Market Stock ===\" curl -s http://localhost:5001/api/market/stock -H \"Authorization: Bearer $TOKEN\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f''''{len\\(d\\)} items, first: {d[0][\"\"name\"\"]} qty={d[0][\"\"playerQty\"\"]}''''\\)\" __NEW_LINE_e148bf70b3aaf443__ echo -e \"\\\\n=== Cook: Start Patty ===\" curl -s -X POST http://localhost:5001/api/cook/start -H \"Authorization: Bearer $TOKEN\" -H \"Content-Type: application/json\" -d '{\"\"\"\"chefId\"\"\"\":\"\"\"\"grill_helper\"\"\"\",\"\"\"\"slotIndex\"\"\"\":0,\"\"\"\"dishId\"\"\"\":\"\"\"\"patty\"\"\"\"}')",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f''''{len\\(d\\)} timers''''\\)\" __NEW_LINE_e148bf70b3aaf443__ echo -e \"\\\\n=== Customer Queue ===\" curl -s http://localhost:5001/api/game/state -H \"Authorization: Bearer $TOKEN\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f''''queue={len\\(d.get\\(\"\"customerQueue\"\",[]\\)\\)}''''\\)\")",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5Y2FhNDNlZTA5YjhkYjBjNmE4YjI4MyIsInVzZXJuYW1lIjoidGVzdHVzZXIiLCJpYXQiOjE3NzQ4ODc5OTgsImV4cCI6MTc3NzQ3OTk5OH0.gr1-i_DUOOGWHghdjhzA2xVz2yjlWM8JUzXGS0iadTA\" __NEW_LINE_a68057960947fa1f__ echo \"=== Game State Summary ===\" curl -s http://localhost:5001/api/game/state -H \"Authorization: Bearer $TOKEN\")",
+      "Bash(python3 -c \":*)",
+      "Bash(python3 -m json.tool __NEW_LINE_a68057960947fa1f__ echo -e \"\\\\n=== Buy Beef ===\" curl -s -X POST http://localhost:5001/api/market/buy -H \"Authorization: Bearer $TOKEN\" -H \"Content-Type: application/json\" -d '{\"\"\"\"ingredientId\"\"\"\":\"\"\"\"beef\"\"\"\",\"\"\"\"quantity\"\"\"\":3}')",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(''''token'''' in d, d.get\\(''''error'''',''''''''\\)\\)\")",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5Y2FhNDNlZTA5YjhkYjBjNmE4YjI4MyIsInVzZXJuYW1lIjoidGVzdHVzZXIiLCJpYXQiOjE3NzQ4ODc5OTgsImV4cCI6MTc3NzQ3OTk5OH0.gr1-i_DUOOGWHghdjhzA2xVz2yjlWM8JUzXGS0iadTA\" __NEW_LINE_866cd3f326e4cdb4__ echo \"=== Seat Customer ===\" curl -s -X POST http://localhost:5001/api/customers/seat -H \"Authorization: Bearer $TOKEN\" -H \"Content-Type: application/json\" -d '{\"\"\"\"tableId\"\"\"\":\"\"\"\"table_1\"\"\"\"}')",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d\\)\" __NEW_LINE_866cd3f326e4cdb4__ echo -e \"\\\\n=== Profile: Rename Restaurant ===\" curl -s -X PATCH http://localhost:5001/api/profile/restaurant-name -H \"Authorization: Bearer $TOKEN\" -H \"Content-Type: application/json\" -d '{\"\"\"\"name\"\"\"\":\"\"\"\"Test Kitchen\"\"\"\"}')",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f''''user={d[\"\"user\"\"][\"\"username\"\"]}, settings={d[\"\"user\"\"][\"\"settings\"\"]}''''\\)\")",
+      "WebFetch(domain:www.worldchef.com)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\(''''error'''',''''OK''''\\)\\)\")"
+    ]
+  }
+}

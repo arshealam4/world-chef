@@ -1,0 +1,112 @@
+[
+  {"id":"patty","name":"Patty","chefId":"grill_helper","isIngredient":true,"requires":{"beef":1},"cookTimeSeconds":120,"xpReward":1,"coinReward":0,"emoji":"🥩"},
+  {"id":"grilled_chicken","name":"Grilled Chicken","chefId":"grill_helper","isIngredient":true,"requires":{"chicken":1},"cookTimeSeconds":180,"xpReward":1,"coinReward":0,"emoji":"🍗"},
+  {"id":"bbq_ribs","name":"BBQ Ribs","chefId":"grill_helper","isIngredient":true,"requires":{"pork":1},"cookTimeSeconds":300,"xpReward":2,"coinReward":0,"emoji":"🍖"},
+  {"id":"bun","name":"Bun","chefId":"dough_helper","isIngredient":true,"requires":{"flour":1},"cookTimeSeconds":120,"xpReward":1,"coinReward":0,"emoji":"🍞"},
+  {"id":"pizza_dough","name":"Pizza Dough","chefId":"dough_helper","isIngredient":true,"requires":{"flour":1,"olive_oil":1},"cookTimeSeconds":180,"xpReward":1,"coinReward":0,"emoji":"🫓"},
+  {"id":"fresh_pasta","name":"Fresh Pasta","chefId":"dough_helper","isIngredient":true,"requires":{"flour":1,"eggs":1},"cookTimeSeconds":200,"xpReward":1,"coinReward":0,"emoji":"🍝"},
+  {"id":"rice_noodles","name":"Rice Noodles","chefId":"dough_helper","isIngredient":true,"requires":{"rice":1},"cookTimeSeconds":180,"xpReward":1,"coinReward":0,"emoji":"🍜"},
+  {"id":"tomato_sauce","name":"Tomato Sauce","chefId":"stove_helper","isIngredient":true,"requires":{"tomato":1},"cookTimeSeconds":240,"xpReward":1,"coinReward":0,"emoji":"🍅"},
+  {"id":"broth","name":"Broth","chefId":"stove_helper","isIngredient":true,"requires":{"chicken":1},"cookTimeSeconds":300,"xpReward":1,"coinReward":0,"emoji":"🥣"},
+  {"id":"hot_sauce","name":"Hot Sauce","chefId":"stove_helper","isIngredient":true,"requires":{"chili":1},"cookTimeSeconds":180,"xpReward":1,"coinReward":0,"emoji":"🌶️"},
+  {"id":"cheese","name":"Cheese","chefId":"milk_helper","isIngredient":true,"requires":{"milk":2},"cookTimeSeconds":300,"xpReward":1,"coinReward":0,"emoji":"🧀"},
+
+  {"id":"hamburger","name":"Hamburger","chefId":"american_chef","isIngredient":false,"requires":{"patty":1,"bun":1},"cookTimeSeconds":240,"eatTimeSeconds":30,"xpReward":3,"coinReward":4,"popularityBoost":1,"emoji":"🍔"},
+  {"id":"steak_tartare","name":"Steak Tartare","chefId":"american_chef","isIngredient":false,"requires":{"beef":1},"cookTimeSeconds":1200,"eatTimeSeconds":180,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🥩"},
+  {"id":"surf_and_turf","name":"Surf and Turf","chefId":"american_chef","isIngredient":false,"requires":{"beef":1,"fish":1},"cookTimeSeconds":3600,"eatTimeSeconds":240,"xpReward":19,"coinReward":22,"popularityBoost":5,"emoji":"🍽️"},
+
+  {"id":"caprese_salad","name":"Caprese Salad","chefId":"antipasti_chef","isIngredient":false,"requires":{"tomato":1,"cheese":1},"cookTimeSeconds":600,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🥗"},
+  {"id":"breadsticks","name":"Breadsticks","chefId":"antipasti_chef","isIngredient":false,"requires":{"flour":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🥖"},
+  {"id":"truffle_risotto","name":"Truffle Risotto","chefId":"antipasti_chef","isIngredient":false,"requires":{"rice":1,"broth":1},"cookTimeSeconds":900,"eatTimeSeconds":120,"xpReward":10,"coinReward":13,"popularityBoost":3,"emoji":"🍚"},
+  {"id":"spring_salad","name":"Spring Salad","chefId":"antipasti_chef","isIngredient":false,"requires":{"tomato":1},"cookTimeSeconds":600,"eatTimeSeconds":60,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🥬"},
+
+  {"id":"cheese_pizza","name":"Cheese Pizza","chefId":"italian_chef","isIngredient":false,"requires":{"pizza_dough":1,"tomato_sauce":1,"cheese":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":8,"coinReward":10,"popularityBoost":2,"emoji":"🍕"},
+  {"id":"pasta_meat_sauce","name":"Pasta with Meat Sauce","chefId":"italian_chef","isIngredient":false,"requires":{"fresh_pasta":1,"beef":1,"tomato_sauce":1},"cookTimeSeconds":900,"eatTimeSeconds":120,"xpReward":10,"coinReward":12,"popularityBoost":3,"emoji":"🍝"},
+  {"id":"pasta_carbonara","name":"Pasta Carbonara","chefId":"italian_chef","isIngredient":false,"requires":{"fresh_pasta":1,"eggs":1},"cookTimeSeconds":840,"eatTimeSeconds":120,"xpReward":9,"coinReward":11,"popularityBoost":3,"emoji":"🍝"},
+
+  {"id":"nigiri_sushi","name":"Nigiri Sushi","chefId":"japanese_chef","isIngredient":false,"requires":{"fish":1,"rice":1},"cookTimeSeconds":900,"eatTimeSeconds":120,"xpReward":10,"coinReward":13,"popularityBoost":3,"emoji":"🍣"},
+  {"id":"california_maki","name":"California Maki","chefId":"japanese_chef","isIngredient":false,"requires":{"fish":1,"rice":1,"rice_noodles":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":12,"coinReward":15,"popularityBoost":3,"emoji":"🍱"},
+  {"id":"miso_soup","name":"Miso Soup","chefId":"japanese_chef","isIngredient":false,"requires":{"broth":1},"cookTimeSeconds":600,"eatTimeSeconds":60,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🍵"},
+  {"id":"udon_soup","name":"Udon Soup","chefId":"japanese_chef","isIngredient":false,"requires":{"rice_noodles":1,"broth":1},"cookTimeSeconds":900,"eatTimeSeconds":120,"xpReward":9,"coinReward":11,"popularityBoost":3,"emoji":"🍜"},
+
+  {"id":"nachos","name":"Nachos","chefId":"mexican_chef","isIngredient":false,"requires":{"flour":1,"cheese":1},"cookTimeSeconds":480,"eatTimeSeconds":60,"xpReward":5,"coinReward":7,"popularityBoost":1,"emoji":"🧀"},
+  {"id":"taco","name":"Taco","chefId":"mexican_chef","isIngredient":false,"requires":{"beef":1,"tomato":1},"cookTimeSeconds":600,"eatTimeSeconds":60,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🌮"},
+  {"id":"chili_with_rice","name":"Chili with Rice","chefId":"mexican_chef","isIngredient":false,"requires":{"beef":1,"rice":1,"tomato":1},"cookTimeSeconds":1200,"eatTimeSeconds":150,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🍲"},
+  {"id":"stuffed_peppers","name":"Stuffed Peppers","chefId":"mexican_chef","isIngredient":false,"requires":{"beef":1,"cheese":1,"tomato_sauce":1},"cookTimeSeconds":1500,"eatTimeSeconds":180,"xpReward":13,"coinReward":16,"popularityBoost":4,"emoji":"🫑"},
+
+  {"id":"onion_samosa","name":"Onion Samosa","chefId":"indian_chef","isIngredient":false,"requires":{"flour":1,"spices":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🥟"},
+  {"id":"chicken_tikka","name":"Chicken Tikka","chefId":"indian_chef","isIngredient":false,"requires":{"chicken":1,"spices":1},"cookTimeSeconds":1200,"eatTimeSeconds":150,"xpReward":12,"coinReward":15,"popularityBoost":4,"emoji":"🍗"},
+  {"id":"beef_vindaloo","name":"Beef Vindaloo","chefId":"indian_chef","isIngredient":false,"requires":{"beef":1,"spices":1,"tomato":1},"cookTimeSeconds":1800,"eatTimeSeconds":180,"xpReward":15,"coinReward":18,"popularityBoost":5,"emoji":"🍛"},
+
+  {"id":"paella","name":"Paella","chefId":"spanish_chef","isIngredient":false,"requires":{"rice":1,"chicken":1,"fish":1},"cookTimeSeconds":1800,"eatTimeSeconds":180,"xpReward":16,"coinReward":19,"popularityBoost":5,"emoji":"🥘"},
+  {"id":"patatas_bravas","name":"Patatas Bravas","chefId":"spanish_chef","isIngredient":false,"requires":{"tomato_sauce":1,"hot_sauce":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🥔"},
+  {"id":"tapas","name":"Tapas","chefId":"spanish_chef","isIngredient":false,"requires":{"fish":1,"tomato":1},"cookTimeSeconds":900,"eatTimeSeconds":120,"xpReward":9,"coinReward":11,"popularityBoost":3,"emoji":"🍢"},
+  {"id":"spanish_omelette","name":"Spanish Omelette","chefId":"spanish_chef","isIngredient":false,"requires":{"eggs":1,"milk":1},"cookTimeSeconds":600,"eatTimeSeconds":90,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🍳"},
+
+  {"id":"hummus","name":"Hummus","chefId":"arabian_chef","isIngredient":false,"requires":{"olive_oil":1,"spices":1},"cookTimeSeconds":600,"eatTimeSeconds":60,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🫘"},
+  {"id":"falafel","name":"Falafel","chefId":"arabian_chef","isIngredient":false,"requires":{"flour":1,"spices":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🧆"},
+  {"id":"couscous","name":"Couscous","chefId":"arabian_chef","isIngredient":false,"requires":{"beef":1,"spices":1},"cookTimeSeconds":1200,"eatTimeSeconds":150,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🍚"},
+  {"id":"courgette_dolma","name":"Courgette Dolma","chefId":"arabian_chef","isIngredient":false,"requires":{"rice":1,"tomato_sauce":1},"cookTimeSeconds":1500,"eatTimeSeconds":180,"xpReward":13,"coinReward":16,"popularityBoost":4,"emoji":"🥒"},
+
+  {"id":"crepe","name":"Crepe","chefId":"french_chef","isIngredient":false,"requires":{"flour":1,"eggs":1,"milk":1},"cookTimeSeconds":600,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🥞"},
+  {"id":"ratatouille","name":"Ratatouille","chefId":"french_chef","isIngredient":false,"requires":{"tomato":1,"olive_oil":1},"cookTimeSeconds":1200,"eatTimeSeconds":150,"xpReward":11,"coinReward":13,"popularityBoost":3,"emoji":"🥗"},
+  {"id":"filet_mignon","name":"Filet Mignon","chefId":"french_chef","isIngredient":false,"requires":{"beef":2},"cookTimeSeconds":2400,"eatTimeSeconds":240,"xpReward":18,"coinReward":22,"popularityBoost":6,"emoji":"🥩"},
+  {"id":"lobster_bisque","name":"Lobster Bisque","chefId":"french_chef","isIngredient":false,"requires":{"fish":2,"broth":1,"milk":1},"cookTimeSeconds":3600,"eatTimeSeconds":300,"xpReward":22,"coinReward":27,"popularityBoost":7,"emoji":"🦞"},
+
+  {"id":"chocolate_cupcake","name":"Chocolate Cupcake","chefId":"cupcake_chef","isIngredient":false,"requires":{"flour":1,"eggs":1,"sugar":1},"cookTimeSeconds":900,"eatTimeSeconds":90,"xpReward":9,"coinReward":11,"popularityBoost":3,"emoji":"🧁"},
+  {"id":"strawberry_cupcake","name":"Strawberry Cupcake","chefId":"cupcake_chef","isIngredient":false,"requires":{"flour":1,"milk":1,"sugar":1},"cookTimeSeconds":900,"eatTimeSeconds":90,"xpReward":9,"coinReward":11,"popularityBoost":3,"emoji":"🍓"},
+
+  {"id":"bretzel","name":"Bretzel","chefId":"german_chef","isIngredient":false,"requires":{"flour":1,"eggs":1},"cookTimeSeconds":720,"eatTimeSeconds":60,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🥨"},
+  {"id":"potato_salad","name":"Potato Salad","chefId":"german_chef","isIngredient":false,"requires":{"milk":1},"cookTimeSeconds":600,"eatTimeSeconds":90,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🥗"},
+  {"id":"rote_grutze","name":"Rote Grutze","chefId":"german_chef","isIngredient":false,"requires":{"sugar":1,"milk":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🍇"},
+  {"id":"bratwurst","name":"Bratwurst","chefId":"german_chef","isIngredient":false,"requires":{"pork":1},"cookTimeSeconds":840,"eatTimeSeconds":90,"xpReward":8,"coinReward":10,"popularityBoost":3,"emoji":"🌭"},
+
+  {"id":"chickpea_burger","name":"Chickpea Burger","chefId":"vegetarian_chef","isIngredient":false,"requires":{"bun":1,"olive_oil":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🫘"},
+  {"id":"tofu_scramble","name":"Tofu Scramble","chefId":"vegetarian_chef","isIngredient":false,"requires":{"eggs":1,"spices":1},"cookTimeSeconds":480,"eatTimeSeconds":60,"xpReward":5,"coinReward":7,"popularityBoost":1,"emoji":"🍳"},
+  {"id":"vegetarian_lasagna","name":"Vegetarian Lasagna","chefId":"vegetarian_chef","isIngredient":false,"requires":{"fresh_pasta":1,"cheese":1,"tomato_sauce":1},"cookTimeSeconds":1800,"eatTimeSeconds":180,"xpReward":15,"coinReward":18,"popularityBoost":5,"emoji":"🍝"},
+  {"id":"mushroom_soup","name":"Mushroom Soup","chefId":"vegetarian_chef","isIngredient":false,"requires":{"broth":1,"milk":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🍄"},
+
+  {"id":"dumplings","name":"Dumplings","chefId":"chinese_chef","isIngredient":false,"requires":{"flour":1,"pork":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🥟"},
+  {"id":"sweet_sour_pork","name":"Sweet and Sour Pork","chefId":"chinese_chef","isIngredient":false,"requires":{"pork":1,"sugar":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🍖"},
+  {"id":"mapo_tofu","name":"Mapo Tofu","chefId":"chinese_chef","isIngredient":false,"requires":{"beef":1,"spices":1},"cookTimeSeconds":900,"eatTimeSeconds":120,"xpReward":9,"coinReward":11,"popularityBoost":3,"emoji":"🍲"},
+  {"id":"fried_rice","name":"Fried Rice","chefId":"chinese_chef","isIngredient":false,"requires":{"rice":1,"eggs":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🍚"},
+
+  {"id":"pho_bo","name":"Pho Bo","chefId":"vietnam_chef","isIngredient":false,"requires":{"beef":1,"broth":1,"rice_noodles":1},"cookTimeSeconds":2400,"eatTimeSeconds":180,"xpReward":17,"coinReward":21,"popularityBoost":5,"emoji":"🍜"},
+  {"id":"summer_roll","name":"Summer Roll","chefId":"vietnam_chef","isIngredient":false,"requires":{"rice_noodles":1,"pork":1},"cookTimeSeconds":900,"eatTimeSeconds":90,"xpReward":9,"coinReward":11,"popularityBoost":3,"emoji":"🌯"},
+  {"id":"banh_mi","name":"Banh Mi","chefId":"vietnam_chef","isIngredient":false,"requires":{"bun":1,"pork":1},"cookTimeSeconds":720,"eatTimeSeconds":60,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🥖"},
+  {"id":"banh_xeo","name":"Banh Xeo","chefId":"vietnam_chef","isIngredient":false,"requires":{"rice_noodles":1,"pork":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🫔"},
+
+  {"id":"pea_soup","name":"Pea Soup","chefId":"scandinavian_chef","isIngredient":false,"requires":{"broth":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🥣"},
+  {"id":"salmon_sandwich","name":"Salmon Sandwich","chefId":"scandinavian_chef","isIngredient":false,"requires":{"fish":1,"bun":1},"cookTimeSeconds":600,"eatTimeSeconds":60,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🐟"},
+  {"id":"meatballs","name":"Meatballs","chefId":"scandinavian_chef","isIngredient":false,"requires":{"beef":1,"pork":1,"milk":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🍖"},
+
+  {"id":"pad_thai","name":"Pad Thai","chefId":"thai_chef","isIngredient":false,"requires":{"rice_noodles":1,"chicken":1,"eggs":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🍜"},
+  {"id":"spicy_shrimp_soup","name":"Spicy Shrimp Soup","chefId":"thai_chef","isIngredient":false,"requires":{"fish":1,"broth":1,"hot_sauce":1},"cookTimeSeconds":1500,"eatTimeSeconds":150,"xpReward":13,"coinReward":16,"popularityBoost":4,"emoji":"🍲"},
+  {"id":"chicken_coconut","name":"Chicken Coconut","chefId":"thai_chef","isIngredient":false,"requires":{"chicken":1,"milk":1,"spices":1},"cookTimeSeconds":1500,"eatTimeSeconds":150,"xpReward":13,"coinReward":16,"popularityBoost":4,"emoji":"🥥"},
+  {"id":"thai_lobster_salad","name":"Thai Lobster Salad","chefId":"thai_chef","isIngredient":false,"requires":{"fish":2,"hot_sauce":1},"cookTimeSeconds":2400,"eatTimeSeconds":180,"xpReward":18,"coinReward":22,"popularityBoost":6,"emoji":"🦞"},
+
+  {"id":"moussaka","name":"Moussaka","chefId":"greek_chef","isIngredient":false,"requires":{"beef":1,"tomato_sauce":1,"milk":1},"cookTimeSeconds":2400,"eatTimeSeconds":180,"xpReward":17,"coinReward":21,"popularityBoost":5,"emoji":"🫕"},
+  {"id":"greek_salad","name":"Greek Salad","chefId":"greek_chef","isIngredient":false,"requires":{"tomato":1,"olive_oil":1,"cheese":1},"cookTimeSeconds":480,"eatTimeSeconds":60,"xpReward":5,"coinReward":7,"popularityBoost":1,"emoji":"🥗"},
+  {"id":"tzatziki","name":"Tzatziki","chefId":"greek_chef","isIngredient":false,"requires":{"milk":1,"olive_oil":1},"cookTimeSeconds":480,"eatTimeSeconds":60,"xpReward":5,"coinReward":7,"popularityBoost":1,"emoji":"🥒"},
+  {"id":"gyro","name":"Gyro","chefId":"greek_chef","isIngredient":false,"requires":{"chicken":1,"pizza_dough":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🌯"},
+
+  {"id":"kimchi_rice","name":"Kimchi Rice","chefId":"korean_chef","isIngredient":false,"requires":{"rice":1,"hot_sauce":1},"cookTimeSeconds":600,"eatTimeSeconds":90,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🍚"},
+  {"id":"bulgogi","name":"Bulgogi","chefId":"korean_chef","isIngredient":false,"requires":{"beef":1,"spices":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🥩"},
+  {"id":"bibimbap","name":"Bibimbap","chefId":"korean_chef","isIngredient":false,"requires":{"rice":1,"beef":1,"eggs":1},"cookTimeSeconds":1500,"eatTimeSeconds":150,"xpReward":13,"coinReward":16,"popularityBoost":4,"emoji":"🍱"},
+  {"id":"cold_noodles","name":"Cold Noodles","chefId":"korean_chef","isIngredient":false,"requires":{"rice_noodles":1,"beef":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🍜"},
+
+  {"id":"beef_stroganoff","name":"Beef Stroganoff","chefId":"russian_chef","isIngredient":false,"requires":{"beef":1,"milk":1},"cookTimeSeconds":1800,"eatTimeSeconds":180,"xpReward":15,"coinReward":19,"popularityBoost":5,"emoji":"🍖"},
+  {"id":"blini","name":"Blini","chefId":"russian_chef","isIngredient":false,"requires":{"flour":1,"eggs":1,"milk":1},"cookTimeSeconds":600,"eatTimeSeconds":60,"xpReward":6,"coinReward":8,"popularityBoost":2,"emoji":"🥞"},
+  {"id":"knish","name":"Knish","chefId":"russian_chef","isIngredient":false,"requires":{"flour":1,"eggs":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":10,"coinReward":13,"popularityBoost":3,"emoji":"🥐"},
+  {"id":"okroshka","name":"Okroshka","chefId":"russian_chef","isIngredient":false,"requires":{"eggs":1,"milk":1},"cookTimeSeconds":720,"eatTimeSeconds":90,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🥗"},
+
+  {"id":"feijoada","name":"Feijoada","chefId":"brazilian_chef","isIngredient":false,"requires":{"beef":2,"pork":1},"cookTimeSeconds":3600,"eatTimeSeconds":240,"xpReward":22,"coinReward":27,"popularityBoost":7,"emoji":"🫘"},
+  {"id":"acaraje","name":"Acaraje","chefId":"brazilian_chef","isIngredient":false,"requires":{"fish":1,"olive_oil":1},"cookTimeSeconds":1500,"eatTimeSeconds":150,"xpReward":13,"coinReward":16,"popularityBoost":4,"emoji":"🥙"},
+  {"id":"moqueca","name":"Moqueca","chefId":"brazilian_chef","isIngredient":false,"requires":{"fish":1,"tomato":1,"milk":1},"cookTimeSeconds":2400,"eatTimeSeconds":180,"xpReward":17,"coinReward":21,"popularityBoost":5,"emoji":"🍲"},
+  {"id":"beijinho_de_coco","name":"Beijinho de Coco","chefId":"brazilian_chef","isIngredient":false,"requires":{"milk":1,"sugar":1},"cookTimeSeconds":720,"eatTimeSeconds":60,"xpReward":7,"coinReward":9,"popularityBoost":2,"emoji":"🥥"},
+
+  {"id":"fish_and_chips","name":"Fish & Chips","chefId":"english_chef","isIngredient":false,"requires":{"fish":1,"flour":1},"cookTimeSeconds":1200,"eatTimeSeconds":120,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🐟"},
+  {"id":"english_breakfast","name":"English Breakfast","chefId":"english_chef","isIngredient":false,"requires":{"eggs":1,"pork":1},"cookTimeSeconds":900,"eatTimeSeconds":120,"xpReward":9,"coinReward":11,"popularityBoost":3,"emoji":"🍳"},
+  {"id":"cottage_pie","name":"Cottage Pie","chefId":"english_chef","isIngredient":false,"requires":{"beef":1,"tomato":1},"cookTimeSeconds":1800,"eatTimeSeconds":180,"xpReward":15,"coinReward":18,"popularityBoost":5,"emoji":"🥧"},
+  {"id":"beef_wellington","name":"Beef Wellington","chefId":"english_chef","isIngredient":false,"requires":{"beef":2,"pizza_dough":1},"cookTimeSeconds":3600,"eatTimeSeconds":240,"xpReward":22,"coinReward":27,"popularityBoost":7,"emoji":"🥩"}
+]

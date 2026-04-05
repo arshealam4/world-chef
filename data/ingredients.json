@@ -1,0 +1,15 @@
+[
+  {"id":"beef",     "name":"Beef",      "icon":"🥩","marketPrice":3,"restockTimeSec":120,"maxQty":20},
+  {"id":"pork",     "name":"Pork",      "icon":"🐷","marketPrice":3,"restockTimeSec":120,"maxQty":20},
+  {"id":"chicken",  "name":"Chicken",   "icon":"🍗","marketPrice":4,"restockTimeSec":150,"maxQty":15},
+  {"id":"fish",     "name":"Fish",      "icon":"🐟","marketPrice":5,"restockTimeSec":180,"maxQty":15},
+  {"id":"flour",    "name":"Flour",     "icon":"🌾","marketPrice":1,"restockTimeSec":60, "maxQty":30},
+  {"id":"milk",     "name":"Milk",      "icon":"🥛","marketPrice":2,"restockTimeSec":90, "maxQty":20},
+  {"id":"eggs",     "name":"Eggs",      "icon":"🥚","marketPrice":2,"restockTimeSec":90, "maxQty":25},
+  {"id":"rice",     "name":"Rice",      "icon":"🍚","marketPrice":2,"restockTimeSec":90, "maxQty":20},
+  {"id":"tomato",   "name":"Tomato",    "icon":"🍅","marketPrice":2,"restockTimeSec":90, "maxQty":20},
+  {"id":"sugar",    "name":"Sugar",     "icon":"🍬","marketPrice":1,"restockTimeSec":60, "maxQty":30},
+  {"id":"spices",   "name":"Spices",    "icon":"🫙","marketPrice":3,"restockTimeSec":120,"maxQty":20},
+  {"id":"olive_oil","name":"Olive Oil", "icon":"🫒","marketPrice":4,"restockTimeSec":150,"maxQty":15},
+  {"id":"chili",    "name":"Chili",     "icon":"🌶️","marketPrice":2,"restockTimeSec":90, "maxQty":20}
+]
