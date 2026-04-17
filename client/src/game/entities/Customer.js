@@ -104,6 +104,8 @@ export class WalkingCustomer {
     let walkFrame = 0;
 
     const tick = (delta) => {
+      if (this.container.destroyed) { PIXI.Ticker.shared.remove(tick); return; }
+
       const dy = this.targetY - this.container.y;
 
       if (Math.abs(dy) < speed + 1) {

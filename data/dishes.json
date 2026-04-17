@@ -10,6 +10,9 @@
   {"id":"broth","name":"Broth","chefId":"stove_helper","isIngredient":true,"requires":{"chicken":1},"cookTimeSeconds":300,"xpReward":1,"coinReward":0,"emoji":"🥣"},
   {"id":"hot_sauce","name":"Hot Sauce","chefId":"stove_helper","isIngredient":true,"requires":{"chili":1},"cookTimeSeconds":180,"xpReward":1,"coinReward":0,"emoji":"🌶️"},
   {"id":"cheese","name":"Cheese","chefId":"milk_helper","isIngredient":true,"requires":{"milk":2},"cookTimeSeconds":300,"xpReward":1,"coinReward":0,"emoji":"🧀"},
+  {"id":"heavy_cream","name":"Heavy Cream","chefId":"milk_helper","isIngredient":true,"requires":{"milk":1},"cookTimeSeconds":180,"xpReward":1,"coinReward":0,"emoji":"🥛"},
+  {"id":"butter","name":"Butter","chefId":"milk_helper","isIngredient":true,"requires":{"milk":2},"cookTimeSeconds":240,"xpReward":1,"coinReward":0,"emoji":"🧈"},
+  {"id":"yogurt","name":"Yogurt","chefId":"milk_helper","isIngredient":true,"requires":{"milk":1},"cookTimeSeconds":360,"xpReward":2,"coinReward":0,"emoji":"🫙"},
 
   {"id":"hamburger","name":"Hamburger","chefId":"american_chef","isIngredient":false,"requires":{"patty":1,"bun":1},"cookTimeSeconds":240,"eatTimeSeconds":30,"xpReward":3,"coinReward":4,"popularityBoost":1,"emoji":"🍔"},
   {"id":"steak_tartare","name":"Steak Tartare","chefId":"american_chef","isIngredient":false,"requires":{"beef":1},"cookTimeSeconds":1200,"eatTimeSeconds":180,"xpReward":11,"coinReward":14,"popularityBoost":3,"emoji":"🥩"},

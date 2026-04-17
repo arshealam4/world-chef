@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
+import { audioManager } from '../utils/audioManager';
 import { useGameStore } from '../store/useGameStore';
 import { useConfigStore } from '../store/useConfigStore';
 import { useTimerStore } from '../store/useTimerStore';
@@ -90,7 +91,8 @@ export function GamePage() {
   if (isPhone) {
     return (
       <div className="flex flex-col bg-amber-50 overflow-hidden"
-           style={{ height: '100dvh', width: '100vw' }}>
+           style={{ height: '100dvh', width: '100vw' }}
+           onClick={audioManager.unlock.bind(audioManager)}>
         <HUD />
         <ChefStationStrip />
         <div className="flex-1 relative overflow-hidden">
@@ -107,7 +109,8 @@ export function GamePage() {
   // ── LAPTOP LAYOUT ──
   return (
     <div className="flex flex-col bg-amber-50 overflow-hidden"
-         style={{ height: '100dvh', width: '100vw' }}>
+         style={{ height: '100dvh', width: '100vw' }}
+         onClick={audioManager.unlock.bind(audioManager)}>
       <HUD />
       <ChefStationStrip />
       <div className="flex flex-1 overflow-hidden">

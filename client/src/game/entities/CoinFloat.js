@@ -39,6 +39,8 @@ export function spawnCoinFloat(stage, x, y, amount) {
     const gravity = 0.15;
 
     const tick = (delta) => {
+      if (coin.destroyed) { PIXI.Ticker.shared.remove(tick); return; }
+
       frames += delta;
       vy     += gravity * delta;
       coin.x += vx * delta;
@@ -48,8 +50,10 @@ export function spawnCoinFloat(stage, x, y, amount) {
 
       if (frames >= 55) {
         PIXI.Ticker.shared.remove(tick);
-        stage.removeChild(coin);
-        coin.destroy();
+        if (!coin.destroyed) {
+          if (coin.parent) stage.removeChild(coin);
+          coin.destroy();
+        }
       }
     };
     PIXI.Ticker.shared.add(tick);
@@ -71,6 +75,8 @@ export function spawnCoinFloat(stage, x, y, amount) {
 
   let elapsed = 0;
   const textTick = (delta) => {
+    if (text.destroyed) { PIXI.Ticker.shared.remove(textTick); return; }
+
     elapsed    += delta;
     text.y     -= 1.2 * delta;
     text.alpha  = Math.max(0, 1 - elapsed / 50);
@@ -78,8 +84,10 @@ export function spawnCoinFloat(stage, x, y, amount) {
 
     if (elapsed >= 50) {
       PIXI.Ticker.shared.remove(textTick);
-      stage.removeChild(text);
-      text.destroy();
+      if (!text.destroyed) {
+        if (text.parent) stage.removeChild(text);
+        text.destroy();
+      }
     }
   };
   PIXI.Ticker.shared.add(textTick);

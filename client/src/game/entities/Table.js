@@ -232,6 +232,7 @@ export class Table {
     const baseY = cy - T * 1.15;
     let t = Math.random() * Math.PI * 2;
     const tick = (delta) => {
+      if (this.container.destroyed) { PIXI.Ticker.shared.remove(tick); return; }
       t += delta * 0.03;
       bubble.y = baseY + Math.sin(t) * 3;
     };
@@ -302,6 +303,7 @@ export class Table {
     // Bounce + wiggle animation
     let t = 0;
     const tick = (delta) => {
+      if (this.container.destroyed) { PIXI.Ticker.shared.remove(tick); return; }
       t += delta * 0.07;
       stack.y = baseY + Math.sin(t) * 5;
       stack.rotation = Math.sin(t * 0.6) * 0.15;

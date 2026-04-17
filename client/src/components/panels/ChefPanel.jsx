@@ -3,6 +3,7 @@ import { useUIStore } from '../../store/useUIStore';
 import { useGameStore } from '../../store/useGameStore';
 import { useConfigStore } from '../../store/useConfigStore';
 import { useTimerStore } from '../../store/useTimerStore';
+import { audioManager } from '../../utils/audioManager';
 
 function formatTime(ms) {
   if (ms <= 0) return 'Ready!';
@@ -84,10 +85,12 @@ export function ChefPanel() {
 
   const handleStartCooking = async (dishId, slotIndex) => {
     setLoading(true);
+    audioManager.play('cook_start');
     try {
       await startCooking(chefId, slotIndex, dishId);
       showNotification('Cooking started!', 'success');
     } catch (err) {
+      audioManager.play('error');
       showNotification(err.response?.data?.error || 'Failed', 'error');
     }
     setLoading(false);
@@ -97,8 +100,10 @@ export function ChefPanel() {
     setLoading(true);
     try {
       await collectDish(timerId);
+      audioManager.play('collect');
       showNotification('Collected!', 'success');
     } catch (err) {
+      audioManager.play('error');
       showNotification(err.response?.data?.error || 'Failed', 'error');
     }
     setLoading(false);
@@ -108,8 +113,10 @@ export function ChefPanel() {
     setLoading(true);
     try {
       await skipWithGem(timerId);
+      audioManager.play('coin');
       showNotification('Skipped with gems!', 'success');
     } catch (err) {
+      audioManager.play('error');
       showNotification(err.response?.data?.error || 'Not enough gems', 'error');
     }
     setLoading(false);

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useUIStore } from '../../store/useUIStore';
 import { useGameStore } from '../../store/useGameStore';
 import { useConfigStore } from '../../store/useConfigStore';
+import { audioManager } from '../../utils/audioManager';
 
 export function ServePanel() {
   const activePanelData = useUIStore(s => s.activePanelData);
@@ -25,9 +26,11 @@ export function ServePanel() {
     setLoading(true);
     try {
       await serveCustomer(tableId, dishId);
+      audioManager.play('serve');
       showNotification('Dish served!', 'success');
       closePanel();
     } catch (err) {
+      audioManager.play('error');
       showNotification(err.response?.data?.error || 'Failed', 'error');
     }
     setLoading(false);
@@ -37,9 +40,11 @@ export function ServePanel() {
     setLoading(true);
     try {
       const result = await collectPayment(tableId);
+      audioManager.play('coin');
       showNotification(`+${result.coinsEarned} coins!`, 'success');
       closePanel();
     } catch (err) {
+      audioManager.play('error');
       showNotification(err.response?.data?.error || 'Failed', 'error');
     }
     setLoading(false);

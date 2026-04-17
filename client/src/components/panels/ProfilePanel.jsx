@@ -3,6 +3,7 @@ import { useAuthStore } from '../../store/useAuthStore';
 import { useGameStore } from '../../store/useGameStore';
 import { useUIStore } from '../../store/useUIStore';
 import { gameApi } from '../../api/gameApi';
+import { audioManager } from '../../utils/audioManager';
 
 export function ProfilePanel() {
   const user = useAuthStore(s => s.user);
@@ -13,8 +14,8 @@ export function ProfilePanel() {
   const closePanel = useUIStore(s => s.closePanel);
 
   const [speed, setSpeed] = useState(1);
-  const [sound, setSound] = useState(true);
-  const [music, setMusic] = useState(true);
+  const [sound, setSound] = useState(() => audioManager.soundEnabled);
+  const [music, setMusic] = useState(() => audioManager.musicEnabled);
   const [restName, setRestName] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -35,16 +36,18 @@ export function ProfilePanel() {
     }
   };
 
-  const handleSoundToggle = async () => {
+  const handleSoundToggle = () => {
     const val = !sound;
     setSound(val);
-    await gameApi.updateSettings({ soundEnabled: val }).catch(() => {});
+    audioManager.setSoundEnabled(val);
+    gameApi.updateSettings({ soundEnabled: val }).catch(() => {});
   };
 
-  const handleMusicToggle = async () => {
+  const handleMusicToggle = () => {
     const val = !music;
     setMusic(val);
-    await gameApi.updateSettings({ musicEnabled: val }).catch(() => {});
+    audioManager.setMusicEnabled(val);
+    gameApi.updateSettings({ musicEnabled: val }).catch(() => {});
   };
 
   const handleRename = async () => {
