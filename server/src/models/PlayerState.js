@@ -32,10 +32,10 @@ const PlayerStateSchema = new Schema({
   }],
 
   ingredientStorage:    { type: Map, of: Number, default: {} },
-  ingredientStorageCap: { type: Number, default: 50 },
+  ingredientStorageCap: { type: Number, default: 100 },
 
   dishStorage:    { type: Map, of: Number, default: {} },
-  dishStorageCap: { type: Number, default: 30 },
+  dishStorageCap: { type: Number, default: 60 },
 
   decorations: [{ decorId: String, position: { x: Number, y: Number } }],
 

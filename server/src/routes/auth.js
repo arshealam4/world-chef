@@ -22,10 +22,11 @@ function createDefaultPlayerState(userId) {
     coins: 500,
     gems: 10,
     chefs: [
-      { chefId: 'grill_helper', slots: 2, maxSlots: 4, position: { x: 0, y: 0 } },
-      { chefId: 'dough_helper', slots: 2, maxSlots: 4, position: { x: 2, y: 0 } },
-      { chefId: 'stove_helper', slots: 2, maxSlots: 3, position: { x: 4, y: 0 } },
-      { chefId: 'american_chef', slots: 1, maxSlots: 3, position: { x: 6, y: 0 } },
+      { chefId: 'grill_helper',   slots: 3, maxSlots: 6, position: { x: 0, y: 0 } },
+      { chefId: 'dough_helper',   slots: 3, maxSlots: 6, position: { x: 2, y: 0 } },
+      { chefId: 'stove_helper',   slots: 3, maxSlots: 6, position: { x: 4, y: 0 } },
+      { chefId: 'milk_helper',    slots: 3, maxSlots: 6, position: { x: 6, y: 0 } },
+      { chefId: 'american_chef',  slots: 3, maxSlots: 5, position: { x: 8, y: 0 } },
     ],
     tables: [
       { tableId: 'table_1', position: { x: 1, y: 4 }, state: 'empty' },
